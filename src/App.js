@@ -1,3 +1,4 @@
+import logo from "./logo.svg";
 import "@aws-amplify/ui-react/styles.css"
 import './App.css';
 import {
@@ -10,11 +11,11 @@ import {
 } from "@aws-amplify/ui-react"
 
 
-function App({signOut}) {
+function App({ signOut }) {
   return (
     <View className='App'>
       <Card>
-        <Image src="" className="App-logo" alt="logo" />
+        <Image src={logo} className="App-logo" alt="logo" />
         <Heading level={1}>We noe have AUTH!</Heading>
       </Card>
       <Button onClick={signOut()}>Sign Out</Button>
